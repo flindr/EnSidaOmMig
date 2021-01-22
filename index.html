@@ -23,6 +23,11 @@
       href="resources/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="resources/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@300;400&display=swap"
+    />
     <title>En sida om mig</title>
   </head>
 
@@ -43,12 +48,10 @@
     <main id="main">
       <section class="welcome">
         <h1>En sida om mig</h1>
-        <img
-          src="resources/images/splash.webp"
-          width="960"
-          height="640"
-          alt=""
-        />
+        <img srcset="resources/images/splash-1440w.webp 1440w, resources/images/splash-2880w.webp 2880w"
+            sizes="(max-width: 576px) 1440w, 2880w"
+            src="resources/images/splash-2880w.webp"
+            alt="">
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
           possimus quod excepturi, dicta nesciunt recusandae perferendis
@@ -58,43 +61,43 @@
       </section>
 
       <section id="skills">
-        <h1>Skills</h1>
+        <h2>Skills</h2>
         <div class="cards">
           <div class="card">
-            <h2>.NET</h2>
+            <h3>.NET</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
           <div class="card">
-            <h2>React</h2>
+            <h3>React</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
           <div class="card">
-            <h2>Linux</h2>
+            <h3>Linux</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
         </div>
       </section>
 
       <section id="assignments">
-        <h1>Uppdrag</h1>
+        <h2>Uppdrag</h2>
         <div class="cards">
           <div class="card">
-            <h2>Catella</h2>
+            <h3>Catella</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
           <div class="card">
-            <h2>Decerno</h2>
+            <h3>Decerno</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
           <div class="card">
-            <h2>ExOpen</h2>
+            <h3>ExOpen</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
         </div>
       </section>
 
       <footer id="contact">
-        <h1>Kontakt</h1>
+        <h2>Kontakt</h2>
         <div class="contact">
           <a href="mailto:fredrik.lindroth@sprinto.se"
             >fredrik.lindroth@sprinto.se</a
