@@ -1,3 +1,15 @@
+@font-face {
+  font-family: Quicksand;
+  src: url("/resources/fonts/Quicksand/static/Quicksand-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url("/resources/fonts/Quicksand/static/Quicksand-Regular.ttf");
+  font-weight: 400;
+}
+
 * {
   /* https://css-tricks.com/box-sizing/ */
   box-sizing: border-box;
@@ -40,6 +52,18 @@ a:focus {
 
 /* ======= General ======= */
 
+#navigateToMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #17181a;
+  height: 0;
+}
+
+#navigateToMain:focus {
+  height: 50px;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -61,7 +85,7 @@ section h1 {
 
 /* ======= Header ======= */
 
-header {
+.header {
   width: 100%;
   display: flex;
   align-items: center;
@@ -71,17 +95,17 @@ header {
   padding: 0 20px;
 }
 
-header .logo {
+.header .logo {
   width: 30%;
 }
 
-header .logo a {
+.header .logo a {
   font-weight: 300;
   font-size: 40px;
 }
 
-header .logo a:focus,
-header .logo a:hover {
+.header .logo a:focus,
+.header .logo a:hover {
   text-decoration: none;
 }
 
@@ -118,8 +142,8 @@ nav a {
 }
 
 .welcome img {
+  height: auto;
   width: 100%;
-  max-width: 960px;
 }
 
 /* ======= Footer ======= */
