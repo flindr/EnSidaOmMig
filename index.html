@@ -1,79 +1,111 @@
 <!DOCTYPE html>
 <html lang="sv">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@300;400;500;600;700&display=swap" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="resources/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="resources/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="resources/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="resources/favicon/site.webmanifest" />
     <title>En sida om mig</title>
-</head>
+  </head>
 
-<body>
-    <div class="header">
-        <h1>flindr.</h1>
-        <nav>
-            <a href="#skills">skills</a>
-            <a href="#assignments">uppdrag</a>
-            <a href="#contact">kontakt</a>
-        </nav>
-    </div>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">flindr.</a>
+      </div>
+      <nav>
+        <a href="#skills">skills</a>
+        <a href="#assignments">uppdrag</a>
+        <a href="#contact">kontakt</a>
+      </nav>
+    </header>
 
-    <div class="main-content">
-        <div class="welcome">
-            <h1>En sida om mig</h1>
-            <img src="splash.jpg" alt="splash image">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt possimus quod excepturi, dicta
-                nesciunt recusandae perferendis deleniti praesentium asperiores ad nemo dolores fugit ratione neque
-                minus maiores eum, nobis inventore.</p>
+    <main>
+      <section class="welcome">
+        <h1>En sida om mig</h1>
+        <img
+          src="resources/images/splash.jpg"
+          style="width: 100%"
+          alt="splash image"
+        />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
+          possimus quod excepturi, dicta nesciunt recusandae perferendis
+          deleniti praesentium asperiores ad nemo dolores fugit ratione neque
+          minus maiores eum, nobis inventore.
+        </p>
+      </section>
+
+      <section id="skills">
+        <h1>Skills</h1>
+        <div class="cards">
+          <div class="card">
+            <h2>.NET</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="card">
+            <h2>React</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="card">
+            <h2>Linux</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
         </div>
+      </section>
 
-        <div id="skills" class="section">
-            <h1>Skills</h1>
-            <div class="cards">
-                <div class="card">
-                    <h2>.NET</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="card">
-                    <h2>React</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="card">
-                    <h2>Linux</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                </div>
-            </div>
+      <section id="assignments">
+        <h1>Uppdrag</h1>
+        <div class="cards">
+          <div class="card">
+            <h2>Catella</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="card">
+            <h2>Decerno</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="card">
+            <h2>ExOpen</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
         </div>
+      </section>
 
-        <div id="assignments" class="section">
-            <h1>Uppdrag</h1>
-            <div class="cards">
-                <div class="card">
-                    <h2>Catella</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="card">
-                    <h2>Decerno</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="card">
-                    <h2>ExOpen</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                </div>
-            </div>
+      <footer id="contact">
+        <h1>Kontakt</h1>
+        <div class="contact">
+          <a href="mailto:fredrik.lindroth@sprinto.se"
+            >fredrik.lindroth@sprinto.se</a
+          >
+          <a href="https://www.github.com/flindr" target="_blank"
+            >www.github.com/flindr</a
+          >
+          <a href="tel:+46702208244">+46 70-220 82 44</a>
         </div>
-
-        <div id="contact" class="section">
-            <h1>Kontakt</h1>
-            <div class="contact">
-                <a href="mailto:fredrik.lindroth@sprinto.se">fredrik.lindroth@sprinto.se</a>
-                <a href="https://www.github.com/flindr" target="_blank">www.github.com/flindr</a>
-                <a href="tel:+46702208244">+46 70-220 82 44</a>
-            </div>
-        </div>
-    </div>
-</body>
-
+      </footer>
+    </main>
+  </body>
 </html>
