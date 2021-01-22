@@ -94,7 +94,7 @@ section h1 {
 
 /* ======= Header ======= */
 
-.header {
+header {
   width: 100%;
   display: flex;
   align-items: center;
@@ -104,17 +104,17 @@ section h1 {
   padding: 0 20px;
 }
 
-.header .logo {
+header .logo {
   width: 30%;
 }
 
-.header .logo a {
+header .logo a {
   font-weight: 300;
   font-size: 40px;
 }
 
-.header .logo a:focus,
-.header .logo a:hover {
+header .logo a:focus,
+header .logo a:hover {
   text-decoration: none;
 }
 
