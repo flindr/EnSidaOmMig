@@ -1,6 +1,6 @@
 # Google
 User-agent: Googlebot
-Disallow: /contact.html
+Disallow: /admin/
 
 # Bing
 User-agent: msnbot
