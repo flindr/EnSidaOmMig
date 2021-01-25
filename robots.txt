@@ -1,0 +1,12 @@
+# Google
+User-agent: Googlebot
+Disallow: /findus/
+
+# Bing
+User-agent: msnbot
+Crawl-delay: 120
+Disallow: /findus/
+
+# The rest
+User-agent: *
+Allow: /
