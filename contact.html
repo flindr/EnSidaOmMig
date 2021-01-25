@@ -39,6 +39,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@300;400&display=swap"
     />
+
+    <script src="scripts/javascript.js"></script>
   </head>
 
   <body>
@@ -56,56 +58,31 @@
     </header>
 
     <main id="main">
-      <section class="welcome">
-        <h1>En sida om mig</h1>
-        <img
-          src="resources/images/splash.webp"
-          width="960"
-          height="640"
-          alt=""
-        />
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-          possimus quod excepturi, dicta nesciunt recusandae perferendis
-          deleniti praesentium asperiores ad nemo dolores fugit ratione neque
-          minus maiores eum, nobis inventore.
-        </p>
-      </section>
-
-      <section id="skills">
-        <h2>Skills</h2>
-        <div class="cards">
-          <div class="card">
-            <h3>.NET</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <section class="writeme">
+        <h2>Skriv mig!</h2>
+        <form class="form" onsubmit="sendMessage(event)">
+          <div class="formItem">
+            <label for="name">Namn</label>
+            <input type="text" name="name" id="name" />
           </div>
-          <div class="card">
-            <h3>React</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <div class="formItem">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
           </div>
-          <div class="card">
-            <h3>Linux</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <div class="formItem">
+            <label for="message">Meddelande</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
           </div>
-        </div>
-      </section>
-
-      <section id="assignments">
-        <h2>Uppdrag</h2>
-        <div class="cards">
-          <div class="card">
-            <h3>Catella</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <div class="formItem">
+            <input class="submitButton" type="submit" value="Skicka" />
           </div>
-          <div class="card">
-            <h3>Decerno</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-          </div>
-          <div class="card">
-            <h3>ExOpen</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
+        </form>
+        <p id="thankyouMessage"></p>
       </section>
 
       <footer>

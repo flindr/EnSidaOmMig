@@ -194,6 +194,36 @@ footer h2 {
   color: #ffdf6c;
 }
 
+/* ======= Form ======= */
+
+.form {
+  width: 100%;
+  padding: 20px;
+}
+
+.form .formItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form .formItem label {
+  display: inline-block;
+  width: 100px;
+}
+
+.form .formItem input,
+textarea {
+  max-width: 400px;
+}
+
+.formItem .submitButton {
+  font-family: "Quicksand";
+  font-size: 20px;
+  color: #ebecf0;
+  background-color: #17181a;
+}
+
 /* Extra Small devices (portrait phones, less than 576px) */
 
 @media (max-width: 576px) {
