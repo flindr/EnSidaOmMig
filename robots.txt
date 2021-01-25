@@ -1,10 +1,11 @@
 # Google
 User-agent: Googlebot
-Disallow: /findus/
+Disallow: /contact.html
 
 # Bing
 User-agent: msnbot
-Crawl-delay: 120
+# Vänta 120ms innan du söker igenom sidan
+Crawl-delay: 120 
 Disallow: /findus/
 
 # The rest
